@@ -29,6 +29,22 @@ screenRecord(window, (err, sourceId, constraints) => {
 });
 ```
 
+## API
+
+### screenRecord([window], cb(err, sourceId, contraints))
+
+Asks the Chome Extension to ask the user to authorize and pick a window or
+the whole desktop to record.
+
+* `window` - Optional DOM `window` object to use to do screen recording magic
+  (`IFRAME` insertion, `postMessage` etc).
+* `cb(err, sourceId, constraints)` - Callback:
+    * `err` - Error
+    * `sourceId` - The unique webrtc source ID string, that can be passed through
+      a constraints object in `getUserMedia` to then create a webrtc stream.
+    * `constraints` - Prefilled and ready-to-use `getUserMedia` constraints object
+      that can be directly used. The `sourceId` is already correctly populated.
+
 ## Acknowledgements
 
 This is a simple commonjs adaptation of the code originally created by

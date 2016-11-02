@@ -16,23 +16,6 @@ var IFRAME_ID = 'get_source_id_ajhifddimkapgcifgcodmmfdlknahffk';
 
 /**
  * Get the Screen ID for a desktop or application screen sharing
- *
- * @param {Error} error
- * @param {string} sourceId
- * @param {Object} screen contraints
- *
- * Example Usage:
- *
- * ```
- * getScreenId(function (error, sourceId, screen_constraints) {
- *   // error    == null || 'PermissionDeniedError || 'not-installed' || 'installed-disabled' || 'not-chrome'
- *   // sourceId == null || 'string' || 'firefox'
- *
- *    if (sourceId === 'firefox') {
- *       navigator.mozGetUserMedia(screen_constraints, onSuccess, onFailure);
- *    }
- *    else navigator.webkitGetUserMedia(screen_constraints, onSuccess, onFailure);
- *  });
  */
 module.exports = getScreenId;
 function getScreenId(_window, callback ) {
