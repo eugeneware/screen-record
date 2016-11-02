@@ -1,13 +1,21 @@
 {
   "name": "screen-record",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Capture desktop video using webrtc",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/eugeneware/screen-record"
   },
-  "keywords": ["webrtc","screencast","screen-record","screen-recording","desktop","share","screencasting"],
+  "keywords": [
+    "webrtc",
+    "screencast",
+    "screen-record",
+    "screen-recording",
+    "desktop",
+    "share",
+    "screencasting"
+  ],
   "author": "Eugene Ware <eugene@noblesamurai.com>",
   "license": "BSD-3-Clause",
   "bugs": {
